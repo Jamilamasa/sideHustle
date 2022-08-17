@@ -1,0 +1,102 @@
+:root {
+    --primaryColor: #38373d;
+}
+/* General styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2rem;
+    /* font-family: 'Rubik Iso', cursive; */
+}
+/* Utility styling */
+.container {
+    display: flex;
+}
+.flx1 {flex: 1;}
+.flx2 {flex: 2;}
+.btn {
+    padding: 6px;
+    width: 80%;
+    background: #596D48;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.error {
+    border: #ff0000 solid 2px;
+}
+.errorMsg {
+    color: #ff0000;
+}
+a {color: #596D48;}
+/* Left div styling */
+.background {
+    flex: 1;
+    height: 100vh;
+    background: url(/img/building.jpg) no-repeat center center/cover;
+}
+.logo {
+    margin: 60% auto;
+    padding: 1.3rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.logoText {
+    font-family: 'Rubik Iso', cursive;
+}
+.icon, .logoText {
+    color: #fff;
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin: 0 10px;
+}
+/* Right div styling */
+.sign-up {
+    /* padding: 3rem; */
+    background-color: #eee;
+}
+.welcomeText {
+    margin: 5rem 30px 5rem 30px;
+}
+.welcomeText > .leadText {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+}
+.signUpForm {
+    background-color: #fff;
+    padding: 1.4rem;
+    line-height: 1.3rem;
+}
+.formHeader {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.formBody {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.form-group {
+    margin-bottom: 11px;
+}
+.form-group input {
+    width: 90%;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+.form-group input:focus {
+    outline: none;
+    border: 2px rgba(20, 144, 175, 0.4) solid;
+}
+.ftr {
+    padding: 2rem;
+}
